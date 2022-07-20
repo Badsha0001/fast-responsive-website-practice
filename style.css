@@ -64,3 +64,72 @@ hr{border: 2px solid lightgray;
         font-size: 16px;
         color: blue;
     }
+
+
+    /* Courses Style */
+
+  .courses{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap:24px ;
+  }
+  .course{width: 253px;}
+  /* .course{width: 253px;} */
+
+    .course .courses-banner img{
+        width: 224px;
+        height: 104px;
+    }
+    .course-last-info{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .icon i{
+        color: gold;
+        font-size: 12px;
+    }
+
+
+    .time{
+        background-color: rgba(205, 92, 92, 0.658);
+        padding: 3px;
+        border-radius: 11px;
+    }
+
+    /*-------------------- 
+        Media Qweries 
+    ----------------------*/
+
+    /*---------------       
+     Mobile Devices 
+     ----------------*/
+
+     @media only screen and (max-width:688px) {
+    .container{width: 100%;}
+
+    .players, .blog-container, .courses{grid-template-columns: repeat(1, 1fr);}
+
+    .player, .blog, .courses{flex-direction: column;}
+                            }
+
+        /* Tablet Devices */
+
+        @media only screen and (min-width:688px) and (max-width:992px) {
+            .container{width: 100%;}
+            .players{grid-template-columns: 
+                repeat(2, 1fr);}
+                }
+            
+        
+        
+
+
+
+
+      /* @media only screen and (min-width:577px) and(max-width:992px) {
+            .container{width: 100%;}
+           .players{grid-template-columns: repeat(2, 1fr);} 
+
+
+        } */
